@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Tab.Navigator tabBarOptions={{
+      <Tab.Navigator TabBarOption={{
         showLabel: false,
         style: {
           backgroundColor: 'white',

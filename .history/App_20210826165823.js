@@ -25,21 +25,21 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Tab.Navigator tabBarOptions={{
+      <Tab.Navigator TabBarOption={{
         showLabel: false,
         style: {
           backgroundColor: 'white',
           position: 'absolute',
           bottom: 40,
           marginHorizontal: 20,
-          height: 60,
-          borderRadius: '#000',
+          bright: 60,
+          borderRadiues: '#000',
           shadowOpacity: 0.06,
           shadowOffset: {
             width: 10,
             height: 10
           },
-          paddingHorizontal: 20,
+          paddingHorizontal: 29,
         }
       }}>
         <Tab.Screen name={"Home"} component={PaginaHome} options={{

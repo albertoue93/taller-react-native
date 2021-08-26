@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Tab.Navigator tabBarOptions={{
+      <Tab.Navigator TabBarOption={{
         showLabel: false,
         style: {
           backgroundColor: 'white',
@@ -36,10 +36,10 @@ export default function App() {
           borderRadius: '#000',
           shadowOpacity: 0.06,
           shadowOffset: {
-            width: 10,
+            with: 10,
             height: 10
           },
-          paddingHorizontal: 20,
+          paddingHorizontal: 29,
         }
       }}>
         <Tab.Screen name={"Home"} component={PaginaHome} options={{
