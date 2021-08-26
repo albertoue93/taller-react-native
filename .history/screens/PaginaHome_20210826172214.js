@@ -33,8 +33,8 @@ class PaginaHome extends Component {
                 contentContainerStyle={{ 
                     flexWrap: "wrap",justifyContent: "center",flexDirection: "row" }}>
                     <FlatList data={ data.items } 
-                    keyExtractor={ ({id},index) => id }
-                    renderItem={ ({ item }) => (
+                    keyExtractor={({id},index) => id}
+                    renderItem={({ item }) => (
                         <Lista name={ item.nombre }/>
                     )}/>
 

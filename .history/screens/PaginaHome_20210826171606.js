@@ -29,13 +29,11 @@ class PaginaHome extends Component {
               justifyContent: 'center',
               alignItems: 'center'
             }}>
-                <ScrollView style={{ width: "100%",height: "75%"}} 
-                contentContainerStyle={{ 
-                    flexWrap: "wrap",justifyContent: "center",flexDirection: "row" }}>
-                    <FlatList data={ data.items } 
-                    keyExtractor={ ({id},index) => id }
-                    renderItem={ ({ item }) => (
-                        <Lista name={ item.nombre }/>
+                <ScrollView style={{ width:"100%",height:"75%"}} contentContainerStyle={{flexWrap:"wrap",justifyContent:"center"}}>
+                    <FlatList data={data.items} 
+                    keyExtractor={({id},index) => id}
+                    renderItem={({item }) => (
+                        <Lista name={item.nombre + item.estado}/>
                     )}/>
 
                 </ScrollView>

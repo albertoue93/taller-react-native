@@ -32,10 +32,10 @@ class PaginaHome extends Component {
                 <ScrollView style={{ width: "100%",height: "75%"}} 
                 contentContainerStyle={{ 
                     flexWrap: "wrap",justifyContent: "center",flexDirection: "row" }}>
-                    <FlatList data={ data.items } 
-                    keyExtractor={ ({id},index) => id }
-                    renderItem={ ({ item }) => (
-                        <Lista name={ item.nombre }/>
+                    <FlatList data={data.items} 
+                    keyExtractor={({id},index) => id}
+                    renderItem={({item }) => (
+                        <Lista name={item.nombre}/>
                     )}/>
 
                 </ScrollView>
